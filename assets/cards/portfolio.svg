@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="220" viewBox="0 0 420 220" role="img" aria-label="Portfolio — My site as a world to explore, with a 3D guide who walks visitors through my work.">
+<title>Portfolio — My site as a world to explore, with a 3D guide who walks visitors through my work.</title>
+<style>
+text { font-family: 'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; }
+.mono { font-family: ui-monospace, SFMono-Regular, 'Cascadia Code', Consolas, Menlo, monospace; }
+.edge { animation: edge 5s ease-in-out infinite; }
+@keyframes edge { 0%,100% { opacity: .55 } 50% { opacity: 1 } }
+.blip { animation: blipk 2s ease-in-out infinite; } @keyframes blipk { 50% { opacity: .25 } }
+.spin { animation: spin 5s linear infinite; transform-origin: 52px 30px; } @keyframes spin { to { transform: rotate(360deg) } }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+<defs>
+  <linearGradient id="c-bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#0b1224"/><stop offset="1" stop-color="#05070d"/>
+  </linearGradient>
+  <linearGradient id="c-edge" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#5eead4" stop-opacity="0.9"/>
+    <stop offset="0.5" stop-color="#5eead4" stop-opacity="0.15"/>
+    <stop offset="1" stop-color="#5eead4" stop-opacity="0.7"/>
+  </linearGradient>
+</defs>
+<rect x="1" y="1" width="418" height="218" rx="16" fill="url(#c-bg)"/>
+<rect class="edge" x="1" y="1" width="418" height="218" rx="16" fill="none" stroke="url(#c-edge)" stroke-width="1.5"/>
+<g transform="translate(24 24)"><rect width="60" height="22" rx="11" fill="#4ade80" fill-opacity="0.12" stroke="#4ade80" stroke-opacity="0.5"/><circle class="blip" cx="12" cy="11" r="3.5" fill="#4ade80"/><text x="22" y="15.5" class="mono" font-size="11" letter-spacing="1.5" fill="#4ade80">LIVE</text></g>
+<g transform="translate(288 26)"><circle cx="52" cy="30" r="9" fill="#5eead4" fill-opacity="0.85"/><ellipse cx="52" cy="30" rx="44" ry="16" fill="none" stroke="#5eead4" stroke-opacity="0.3"/><ellipse cx="52" cy="30" rx="28" ry="28" fill="none" stroke="#38bdf8" stroke-opacity="0.2"/>
+<g class="spin"><circle cx="96" cy="30" r="3.5" fill="#fb7185"/><circle cx="8" cy="30" r="2.5" fill="#5eead4"/></g>
+</g>
+<text x="24" y="82" font-size="25" font-weight="700" fill="#e8eef7">Portfolio</text>
+<text x="24" y="112" font-size="14.5" fill="#8d9bb3">My site as a world to explore, with a 3D guide</text>
+<text x="24" y="133" font-size="14.5" fill="#8d9bb3">who walks visitors through my work.</text>
+<g transform="translate(24 172)"><rect width="54" height="24" rx="12" fill="#5eead4" fill-opacity="0.1" stroke="#5eead4" stroke-opacity="0.4"/><text x="27" y="16.5" text-anchor="middle" class="mono" font-size="12" fill="#e8eef7">React</text></g><g transform="translate(86 172)"><rect width="89" height="24" rx="12" fill="#5eead4" fill-opacity="0.1" stroke="#5eead4" stroke-opacity="0.4"/><text x="44.5" y="16.5" text-anchor="middle" class="mono" font-size="12" fill="#e8eef7">TypeScript</text></g><g transform="translate(183 172)"><rect width="75" height="24" rx="12" fill="#5eead4" fill-opacity="0.1" stroke="#5eead4" stroke-opacity="0.4"/><text x="37.5" y="16.5" text-anchor="middle" class="mono" font-size="12" fill="#e8eef7">Three.js</text></g>
+</svg>

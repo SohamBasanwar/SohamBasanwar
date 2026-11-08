@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="220" viewBox="0 0 420 220" role="img" aria-label="Saya — An emotion-aware chatbot that reads the mood of a conversation and answers to match it.">
+<title>Saya — An emotion-aware chatbot that reads the mood of a conversation and answers to match it.</title>
+<style>
+text { font-family: 'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; }
+.mono { font-family: ui-monospace, SFMono-Regular, 'Cascadia Code', Consolas, Menlo, monospace; }
+.edge { animation: edge 5s ease-in-out infinite; }
+@keyframes edge { 0%,100% { opacity: .55 } 50% { opacity: 1 } }
+.blip { animation: blipk 2s ease-in-out infinite; } @keyframes blipk { 50% { opacity: .25 } }
+.emo { animation: emo 6s infinite; transform-box: fill-box; transform-origin: center; } @keyframes emo { 0%,100% { fill: #fb7185; transform: scale(1) } 25% { fill: #fbbf24; transform: scale(1.25) } 50% { fill: #38bdf8; transform: scale(1) } 75% { fill: #a78bfa; transform: scale(1.2) } }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+<defs>
+  <linearGradient id="c-bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#0b1224"/><stop offset="1" stop-color="#05070d"/>
+  </linearGradient>
+  <linearGradient id="c-edge" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#fb7185" stop-opacity="0.9"/>
+    <stop offset="0.5" stop-color="#fb7185" stop-opacity="0.15"/>
+    <stop offset="1" stop-color="#fb7185" stop-opacity="0.7"/>
+  </linearGradient>
+</defs>
+<rect x="1" y="1" width="418" height="218" rx="16" fill="url(#c-bg)"/>
+<rect class="edge" x="1" y="1" width="418" height="218" rx="16" fill="none" stroke="url(#c-edge)" stroke-width="1.5"/>
+<g transform="translate(24 24)"><rect width="83" height="22" rx="11" fill="#5eead4" fill-opacity="0.12" stroke="#5eead4" stroke-opacity="0.5"/><circle class="blip" cx="12" cy="11" r="3.5" fill="#5eead4"/><text x="22" y="15.5" class="mono" font-size="11" letter-spacing="1.5" fill="#5eead4">SHIPPED</text></g>
+<g transform="translate(288 26)"><rect x="0" y="0" width="104" height="40" rx="12" fill="#1c2740"/><path d="M18 40 l-6 10 l14 -10z" fill="#1c2740"/>
+<rect x="12" y="12" width="52" height="6" rx="3" fill="#8d9bb3" fill-opacity="0.5"/><rect x="12" y="24" width="34" height="6" rx="3" fill="#8d9bb3" fill-opacity="0.35"/>
+<circle cx="86" cy="20" r="8" class="emo" fill="#fb7185"/></g>
+<text x="24" y="82" font-size="25" font-weight="700" fill="#e8eef7">Saya</text>
+<text x="24" y="112" font-size="14.5" fill="#8d9bb3">An emotion-aware chatbot that reads the mood</text>
+<text x="24" y="133" font-size="14.5" fill="#8d9bb3">of a conversation and answers to match it.</text>
+<g transform="translate(24 172)"><rect width="61" height="24" rx="12" fill="#fb7185" fill-opacity="0.1" stroke="#fb7185" stroke-opacity="0.4"/><text x="30.5" y="16.5" text-anchor="middle" class="mono" font-size="12" fill="#e8eef7">Python</text></g><g transform="translate(93 172)"><rect width="68" height="24" rx="12" fill="#fb7185" fill-opacity="0.1" stroke="#fb7185" stroke-opacity="0.4"/><text x="34" y="16.5" text-anchor="middle" class="mono" font-size="12" fill="#e8eef7">FastAPI</text></g><g transform="translate(169 172)"><rect width="89" height="24" rx="12" fill="#fb7185" fill-opacity="0.1" stroke="#fb7185" stroke-opacity="0.4"/><text x="44.5" y="16.5" text-anchor="middle" class="mono" font-size="12" fill="#e8eef7">OpenAI API</text></g>
+</svg>

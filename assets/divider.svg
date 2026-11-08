@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="18" viewBox="0 0 1000 18" role="img" aria-label="">
+<title></title>
+<style>
+text { font-family: 'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; }
+.mono { font-family: ui-monospace, SFMono-Regular, 'Cascadia Code', Consolas, Menlo, monospace; }
+.scan { animation: scan 6s ease-in-out infinite; } @keyframes scan { 0% { transform: translateX(-160px) } 100% { transform: translateX(1000px) } }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+<defs><linearGradient id="dl" x1="0" x2="1"><stop offset="0" stop-color="#fb7185" stop-opacity="0"/><stop offset="0.5" stop-color="#fb7185"/><stop offset="1" stop-color="#5eead4" stop-opacity="0"/></linearGradient></defs>
+<line x1="0" y1="9" x2="1000" y2="9" stroke="#8d9bb3" stroke-opacity="0.25"/>
+<rect class="scan" x="0" y="8" width="160" height="2" rx="1" fill="url(#dl)"/>
+<circle cx="500" cy="9" r="3" fill="#fb7185"/>
+</svg>
