@@ -33,14 +33,15 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
+          SETTING_JSON: .github/profile-3d.json
 
       - name: Contribution snake
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            generated/snake.svg?palette=github-light&color_snake=#e11d48
-            generated/snake-dark.svg?palette=github-dark&color_snake=#fb7185&color_dots=#161b22,#134e4a,#0f766e,#14b8a6,#5eead4
+            generated/snake-light.svg?palette=github-light
+            generated/snake-dark.svg?palette=github-dark
 
       - name: Commit if anything changed
         run: |

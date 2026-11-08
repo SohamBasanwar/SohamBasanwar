@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="150" viewBox="0 0 300 150" role="img" aria-label="CommandFlow AI: Tell it the work; it plans when to start and always keeps a buffer.">
+<title>CommandFlow AI: Tell it the work; it plans when to start and always keeps a buffer.</title>
+<style>
+text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif; }
+.mono { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; }
+.now { animation: now 5s linear infinite; } @keyframes now { from { transform: translateX(0) } to { transform: translateX(76px) } }
+.buf { animation: buf 1.6s ease-in-out infinite; } @keyframes buf { 50% { stroke-opacity: .3 } }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+<rect x="0.5" y="0.5" width="299" height="149" rx="6" fill="#ffffff" stroke="#d1d9e0"/>
+<g transform="translate(16 20)"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Zm10.5-1h-8a1 1 0 0 0-1 1v6.708A2.486 2.486 0 0 1 4.5 9h8ZM5 12.25a.25.25 0 0 1 .25-.25h3.5a.25.25 0 0 1 .25.25v3.25a.25.25 0 0 1-.4.2l-1.45-1.087a.25.25 0 0 0-.3 0L5.4 15.7a.25.25 0 0 1-.4-.2Z" fill="#59636e"/></g>
+<text x="40" y="33" font-size="15" font-weight="600" fill="#0969da">CommandFlow AI</text>
+<g transform="translate(206 16)"><rect x="0" y="6" width="78" height="1" fill="#d1d9e0"/>
+<rect x="0" y="14" width="24" height="10" rx="3" fill="#8250df" fill-opacity="0.75"/><rect x="28" y="14" width="20" height="10" rx="3" fill="#0969da" fill-opacity="0.7"/>
+<rect class="buf" x="52.5" y="14.5" width="25" height="9" rx="3" fill="none" stroke="#9a6700" stroke-dasharray="2 2"/>
+<rect class="now" x="0" y="2" width="1.5" height="28" fill="#d1242f"/></g>
+<text x="16" y="78" font-size="13" fill="#59636e">Tell it the work; it plans when to</text>
+<text x="16" y="98" font-size="13" fill="#59636e">start and always keeps a buffer.</text>
+<circle cx="22" cy="126" r="6" fill="#3572A5"/>
+<text x="34" y="130" font-size="12" fill="#59636e">Python  ·  FastAPI</text>
+<g transform="translate(193 116)"><rect x="0.5" y="0.5" width="90" height="19" rx="9.5" fill="none" stroke="#9a6700"/><text x="45.5" y="14" text-anchor="middle" font-size="12" font-weight="500" fill="#9a6700">In progress</text></g>
+</svg>

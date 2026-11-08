@@ -18,9 +18,10 @@ const get = async (url, as = "json") => {
 // Byte counts reward one large file over many projects, so each repo adds the
 // square root of its bytes. Notebooks and build glue are left out.
 const SKIP = new Set(["Jupyter Notebook", "Batchfile", "CMake", "Makefile", "Shell", "Dockerfile"]);
+// Linguist colors, the same dots GitHub shows on repositories.
 const LANG_COLORS = {
-  C: "#8b9eff", "C++": "#f34b7d", Java: "#f89820", TypeScript: "#3b82f6", JavaScript: "#f1e05a",
-  Python: "#5eead4", Other: "#475569", HTML: "#e34c26", CSS: "#a78bfa", Go: "#00add8", "F#": "#b845fc", Julia: "#a270ba",
+  C: "#555555", "C++": "#f34b7d", Java: "#b07219", TypeScript: "#3178c6", JavaScript: "#f1e05a",
+  Python: "#3572A5", HTML: "#e34c26", CSS: "#663399", Go: "#00ADD8", "F#": "#b845fc", Julia: "#a270ba",
 };
 
 async function contributions() {
@@ -66,76 +67,81 @@ async function repoStats() {
   };
 }
 
-const SANS = "'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif";
-const MONO = "ui-monospace, SFMono-Regular, 'Cascadia Code', Consolas, Menlo, monospace";
-const frame = (w, h, label, body, css) => `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="${label}">
+// GitHub Primer color tokens, matching scripts/build-assets.mjs.
+const THEMES = {
+  dark: { canvas: "#0d1117", border: "#3d444d", line: "#262c36", fg: "#f0f6fc", muted: "#9198a1", other: "#656c76" },
+  light: { canvas: "#ffffff", border: "#d1d9e0", line: "#eaeef2", fg: "#1f2328", muted: "#59636e", other: "#818b98" },
+};
+const SANS = `-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif`;
+const frame = (T, w, h, label, body, css = "") => `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="${label}">
 <title>${label}</title>
 <style>
-text { font-family: ${SANS}; } .mono { font-family: ${MONO}; }
-.in { opacity: 0; animation: in .7s ease-out forwards; }
-@keyframes in { from { opacity: 0; transform: translateY(8px) } to { opacity: 1; transform: none } }
+text { font-family: ${SANS}; }
+.in { opacity: 0; animation: in .6s ease-out forwards; }
+@keyframes in { to { opacity: 1 } }
 ${css}
-@media (prefers-reduced-motion: reduce) { * { animation: none !important; opacity: 1 !important; } }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; opacity: 1 !important; transform: none !important; } }
 </style>
-<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1224"/><stop offset="1" stop-color="#05070d"/></linearGradient>
-<linearGradient id="edge" x1="0" x2="1"><stop offset="0" stop-color="#fb7185" stop-opacity=".8"/><stop offset=".5" stop-color="#fb7185" stop-opacity=".12"/><stop offset="1" stop-color="#5eead4" stop-opacity=".7"/></linearGradient></defs>
-<rect x="1" y="1" width="${w - 2}" height="${h - 2}" rx="16" fill="url(#bg)" stroke="url(#edge)" stroke-width="1.5"/>
+<rect x="0.5" y="0.5" width="${w - 1}" height="${h - 1}" rx="6" fill="${T.canvas}" stroke="${T.border}"/>
 ${body}
 </svg>
 `;
 
-function statsSvg(c, r, updated) {
+function statsSvg(T, c, r, updated) {
   const items = [
-    ["Contributions · last year", c.total, "#5eead4"],
-    ["Active days", c.active, "#38bdf8"],
-    ["Languages used", r.langCount, "#fb7185"],
-    ["Longest streak", `${c.longest}d`, "#fbbf24"],
-    ["Public repos", r.repos, "#a78bfa"],
-    ["Stars earned", r.stars, "#4ade80"],
+    [c.total, "Contributions"],
+    [c.active, "Active days"],
+    [r.langCount, "Languages used"],
+    [`${c.longest} days`, "Longest streak"],
+    [r.repos, "Public repos"],
+    [r.stars, "Stars earned"],
   ];
-  const body = `<text x="24" y="38" class="mono" font-size="12" letter-spacing="2.5" fill="#5eead4">// ACTIVITY</text>
-<text x="471" y="38" text-anchor="end" class="mono" font-size="11" fill="#8d9bb3">updated ${updated}</text>
+  const body = `<text x="20" y="34" font-size="15" font-weight="600" fill="${T.fg}">Activity <tspan font-weight="400" fill="${T.muted}">in the past year</tspan></text>
+<text x="475" y="34" text-anchor="end" font-size="12" fill="${T.muted}">updated ${updated}</text>
+<line x1="20" y1="50" x2="475" y2="50" stroke="${T.line}"/>
 ${items
-  .map(([label, value, col], i) => {
-    const x = 24 + (i % 3) * 152, y = 64 + Math.floor(i / 3) * 62;
-    return `<g class="in" style="animation-delay:${(i * 0.12).toFixed(2)}s"><rect x="${x}" y="${y}" width="140" height="52" rx="10" fill="#0a0f1d" stroke="#1c2740"/>
-<rect x="${x}" y="${y + 12}" width="3" height="28" rx="1.5" fill="${col}"/>
-<text x="${x + 14}" y="${y + 26}" font-size="20" font-weight="700" fill="#e8eef7">${value}</text>
-<text x="${x + 14}" y="${y + 43}" font-size="11" fill="#8d9bb3">${label}</text></g>`;
+  .map(([value, label], i) => {
+    const x = 20 + (i % 3) * 156, y = 84 + Math.floor(i / 3) * 56;
+    return `<g class="in" style="animation-delay:${(i * 0.1).toFixed(2)}s"><text x="${x}" y="${y}" font-size="22" font-weight="600" fill="${T.fg}">${value}</text>
+<text x="${x}" y="${y + 20}" font-size="12" fill="${T.muted}">${label}</text></g>`;
   })
   .join("\n")}`;
-  return frame(495, 200, `GitHub activity: ${c.total} contributions in the last year, ${r.repos} public repos`, body, "");
+  return frame(T, 495, 200, `GitHub activity: ${c.total} contributions in the last year, ${r.repos} public repos`, body);
 }
 
-function langSvg(langs) {
-  let x = 24;
+function langSvg(T, langs) {
+  const color = (name) => LANG_COLORS[name] || T.other;
+  let x = 20;
   const bar = langs
     .map((l, i) => {
-      const w = (l.pct / 100) * 447;
-      const seg = `<rect class="seg" x="${x.toFixed(1)}" y="62" width="${Math.max(w - 2, 1).toFixed(1)}" height="12" rx="3" fill="${LANG_COLORS[l.name] || "#8d9bb3"}" style="animation-delay:${(i * 0.12).toFixed(2)}s"/>`;
+      const w = (l.pct / 100) * 455;
+      const seg = `<rect class="seg" x="${x.toFixed(1)}" y="66" width="${Math.max(w - 2, 1).toFixed(1)}" height="8" fill="${color(l.name)}" style="animation-delay:${(i * 0.1).toFixed(2)}s"/>`;
       x += w;
       return seg;
     })
     .join("");
   const rows = langs
     .map((l, i) => {
-      const cx = 24 + (i % 2) * 232, cy = 106 + Math.floor(i / 2) * 28;
-      return `<g class="in" style="animation-delay:${(0.4 + i * 0.1).toFixed(2)}s"><circle cx="${cx + 6}" cy="${cy - 4}" r="5" fill="${LANG_COLORS[l.name] || "#8d9bb3"}"/>
-<text x="${cx + 18}" y="${cy}" font-size="14" fill="#e8eef7">${l.name}</text><text x="${cx + 200}" y="${cy}" text-anchor="end" class="mono" font-size="12" fill="#8d9bb3">${l.pct.toFixed(1)}%</text></g>`;
+      const cx = 20 + (i % 2) * 240, cy = 108 + Math.floor(i / 2) * 28;
+      return `<g class="in" style="animation-delay:${(0.3 + i * 0.08).toFixed(2)}s"><circle cx="${cx + 5}" cy="${cy - 4}" r="5" fill="${color(l.name)}"/>
+<text x="${cx + 18}" y="${cy}" font-size="13" font-weight="600" fill="${T.fg}">${l.name}</text><text x="${cx + 215}" y="${cy}" text-anchor="end" font-size="12" fill="${T.muted}">${l.pct.toFixed(1)}%</text></g>`;
     })
     .join("\n");
-  const body = `<text x="24" y="38" class="mono" font-size="12" letter-spacing="2.5" fill="#5eead4">// LANGUAGES</text>
-<rect x="24" y="62" width="447" height="12" rx="3" fill="#1c2740"/>
-${bar}
+  const body = `<text x="20" y="34" font-size="15" font-weight="600" fill="${T.fg}">Languages</text>
+<line x1="20" y1="50" x2="475" y2="50" stroke="${T.line}"/>
+<clipPath id="barclip"><rect x="20" y="66" width="455" height="8" rx="4"/></clipPath>
+<g clip-path="url(#barclip)"><rect x="20" y="66" width="455" height="8" fill="${T.line}"/>${bar}</g>
 ${rows}`;
-  const css = `.seg { transform-box: fill-box; transform: scaleX(0); animation: grow .9s ease-out forwards; }
+  const css = `.seg { transform-box: fill-box; transform: scaleX(0); animation: grow .8s ease-out forwards; }
 @keyframes grow { to { transform: scaleX(1) } }`;
-  return frame(495, 200, `Top languages: ${langs.map((l) => l.name).join(", ")}`, body, css);
+  return frame(T, 495, 200, `Top languages: ${langs.map((l) => l.name).join(", ")}`, body, css);
 }
 
 const [c, r] = await Promise.all([contributions(), repoStats()]);
 const updated = new Date().toISOString().slice(0, 10);
 mkdirSync(join(root, "generated"), { recursive: true });
-writeFileSync(join(root, "generated/stats.svg"), statsSvg(c, r, updated));
-writeFileSync(join(root, "generated/languages.svg"), langSvg(r.langs));
+for (const [name, T] of Object.entries(THEMES)) {
+  writeFileSync(join(root, `generated/stats-${name}.svg`), statsSvg(T, c, r, updated));
+  writeFileSync(join(root, `generated/languages-${name}.svg`), langSvg(T, r.langs));
+}
 console.log({ ...c, repos: r.repos, stars: r.stars, langs: r.langs.map((l) => `${l.name} ${l.pct.toFixed(1)}%`) });

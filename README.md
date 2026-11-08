@@ -1,26 +1,18 @@
 <p align="center">
-  <a href="https://sohambasanwar.vercel.app">
-    <img src="assets/hero.svg" width="100%" alt="Soham Basanwar: AI, full-stack and systems. Open to Summer 2027 internships." />
-  </a>
+  <a href="https://sohambasanwar.vercel.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg" /><img src="assets/hero-light.svg" width="100%" alt="Soham Basanwar: AI, full-stack and systems. Open to Summer 2027 internships." /></picture></a>
 </p>
 
 <p align="center">
-  <a href="https://sohambasanwar.vercel.app"><img src="https://img.shields.io/badge/Portfolio-sohambasanwar.vercel.app-5eead4?style=flat-square&labelColor=0b1224" alt="Portfolio" /></a>
-  <a href="https://www.linkedin.com/in/sohambasanwar/"><img src="https://img.shields.io/badge/LinkedIn-sohambasanwar-38bdf8?style=flat-square&logo=linkedin&logoColor=white&labelColor=0b1224" alt="LinkedIn" /></a>
-  <img src="https://komarev.com/ghpvc/?username=SohamBasanwar&label=profile%20views&color=fb7185&style=flat-square" alt="Profile views" />
+  <img src="https://komarev.com/ghpvc/?username=SohamBasanwar&label=profile%20views&color=1f6feb&style=flat-square" alt="Profile views" />
 </p>
 
 I'm a Computer Science student at the **University of Illinois Chicago** (graduating Fall 2027, major GPA 3.9) and I'm looking for **Summer 2027 internships** in AI / ML engineering, full-stack with AI, front end or back end.
 
 I like building things people can actually use: AI that adapts to how someone feels or works, apps with real polish, and the low-level systems underneath. I'm especially curious about where AI meets **health, psychology and the human heart**.
 
-<img src="assets/divider.svg" width="100%" alt="" />
-
 ## Right now
 
-<p align="center">
-  <img src="assets/now.svg" width="100%" alt="Checago Coffee: ransomware wiped the database in week one; I rebuilt it, moved it to AWS and migrated the apps." />
-</p>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/now-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="assets/now-light.svg" /><img src="assets/now-light.svg" width="100%" alt="Checago Coffee: ransomware wiped the database in week one; I rebuilt it, moved it to AWS and migrated the apps." /></picture>
 
 In my first week at **Checago Coffee**, a ransomware attack wiped the company database. I rebuilt it, then the infrastructure around it:
 
@@ -29,21 +21,19 @@ In my first week at **Checago Coffee**, a ransomware attack wiped the company da
 - Created or refactored **158 PHP API endpoints** and migrated the Android app and website onto them
 - Shipped Android features (a gamification tier system, Google Sign-In, OSRM map routing) and **11 new pages** for the React admin platform
 
-<img src="assets/divider.svg" width="100%" alt="" />
-
 ## Featured work
 
 <p align="center">
-  <a href="https://github.com/SohamBasanwar/sohamalloc"><img src="assets/cards/sohamalloc.svg" width="49%" alt="sohamalloc: a drop-in malloc/free in C11" /></a>
-  <a href="https://github.com/SohamBasanwar/PersistAI"><img src="assets/cards/persistai.svg" width="49%" alt="PersistAI: AI résumé builder" /></a>
+  <a href="https://github.com/SohamBasanwar/sohamalloc"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/sohamalloc-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="assets/cards/sohamalloc-light.svg" /><img src="assets/cards/sohamalloc-light.svg" width="49%" alt="sohamalloc: a drop-in malloc/free in C11" /></picture></a>
+  <a href="https://github.com/SohamBasanwar/PersistAI"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/persistai-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="assets/cards/persistai-light.svg" /><img src="assets/cards/persistai-light.svg" width="49%" alt="PersistAI: AI résumé builder" /></picture></a>
 </p>
 <p align="center">
-  <a href="https://github.com/SohamBasanwar/Checkers"><img src="assets/cards/checkers.svg" width="49%" alt="Checkers Online: networked multiplayer checkers" /></a>
-  <a href="https://github.com/SohamBasanwar/Weather-App"><img src="assets/cards/weather.svg" width="49%" alt="Simple Weather: JavaFX weather app" /></a>
+  <a href="https://github.com/SohamBasanwar/Checkers"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/checkers-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="assets/cards/checkers-light.svg" /><img src="assets/cards/checkers-light.svg" width="49%" alt="Checkers: networked multiplayer checkers" /></picture></a>
+  <a href="https://github.com/SohamBasanwar/Weather-App"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/weather-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="assets/cards/weather-light.svg" /><img src="assets/cards/weather-light.svg" width="49%" alt="Weather-App: JavaFX weather app" /></picture></a>
 </p>
 <p align="center">
-  <a href="https://github.com/SohamBasanwar/Saya"><img src="assets/cards/saya.svg" width="49%" alt="Saya: emotion-aware chatbot" /></a>
-  <a href="https://sohambasanwar.vercel.app"><img src="assets/cards/portfolio.svg" width="49%" alt="Portfolio: live 3D site" /></a>
+  <a href="https://github.com/SohamBasanwar/Saya"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/saya-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="assets/cards/saya-light.svg" /><img src="assets/cards/saya-light.svg" width="49%" alt="Saya: emotion-aware chatbot" /></picture></a>
+  <a href="https://sohambasanwar.vercel.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/portfolio-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="assets/cards/portfolio-light.svg" /><img src="assets/cards/portfolio-light.svg" width="49%" alt="Portfolio: live 3D site" /></picture></a>
 </p>
 
 <details>
@@ -63,95 +53,83 @@ In my first week at **Checago Coffee**, a ransomware attack wiped the company da
 
 </details>
 
-### In the lab
+### In progress
 
 <p align="center">
-  <a href="https://sohambasanwar.vercel.app"><img src="assets/cards/commandflow.svg" width="32%" alt="CommandFlow AI" /></a>
-  <a href="https://sohambasanwar.vercel.app"><img src="assets/cards/helios.svg" width="32%" alt="Project Helios" /></a>
-  <a href="https://sohambasanwar.vercel.app"><img src="assets/cards/maze.svg" width="32%" alt="Dual-Reality Maze" /></a>
+  <a href="https://sohambasanwar.vercel.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/commandflow-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="assets/cards/commandflow-light.svg" /><img src="assets/cards/commandflow-light.svg" width="32%" alt="CommandFlow AI" /></picture></a>
+  <a href="https://sohambasanwar.vercel.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/helios-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="assets/cards/helios-light.svg" /><img src="assets/cards/helios-light.svg" width="32%" alt="Project Helios" /></picture></a>
+  <a href="https://sohambasanwar.vercel.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/maze-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="assets/cards/maze-light.svg" /><img src="assets/cards/maze-light.svg" width="32%" alt="Dual-Reality Maze" /></picture></a>
 </p>
-
-<img src="assets/divider.svg" width="100%" alt="" />
 
 ## Recognition
 
-<p align="center">
-  <img src="assets/icsc.svg" width="100%" alt="ICSC 2026: 1st Prize Senior category, 1st National Award United States, Gold Honour top 1%" />
-</p>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/icsc-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="assets/icsc-light.svg" /><img src="assets/icsc-light.svg" width="100%" alt="ICSC 2026: 1st Prize Senior category, 1st National Award United States, Gold Honour top 1%" /></picture>
 
 - **Columbia University Transportation Data Science Project** certificate
 - **CodePath Technical Interview Prep (TIP 102)**, intermediate level
 - **Checago Coffee** internship completion certificate
 
-<img src="assets/divider.svg" width="100%" alt="" />
-
 ## Toolbox
 
 <p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-  <img src="https://img.shields.io/badge/Java-EA2D2E?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
-  <img src="https://img.shields.io/badge/C-283593?style=for-the-badge&logo=c&logoColor=white" alt="C" />
-  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
-  <img src="https://img.shields.io/badge/SQL-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL" />
-  <img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go" />
-  <img src="https://img.shields.io/badge/Julia-9558B2?style=for-the-badge&logo=julia&logoColor=white" alt="Julia" />
-  <img src="https://img.shields.io/badge/F%23-378BBA?style=for-the-badge&logo=fsharp&logoColor=white" alt="F#" />
-  <img src="https://img.shields.io/badge/Assembly-525252?style=for-the-badge" alt="Assembly" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Java-EA2D2E?style=flat-square&logo=openjdk&logoColor=white" alt="Java" />
+  <img src="https://img.shields.io/badge/C-283593?style=flat-square&logo=c&logoColor=white" alt="C" />
+  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white" alt="C++" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white" alt="PHP" />
+  <img src="https://img.shields.io/badge/SQL-336791?style=flat-square&logo=postgresql&logoColor=white" alt="SQL" />
+  <img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go" />
+  <img src="https://img.shields.io/badge/Julia-9558B2?style=flat-square&logo=julia&logoColor=white" alt="Julia" />
+  <img src="https://img.shields.io/badge/F%23-378BBA?style=flat-square&logo=fsharp&logoColor=white" alt="F#" />
+  <img src="https://img.shields.io/badge/Assembly-525252?style=flat-square" alt="Assembly" />
 </p>
 <p>
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
-  <img src="https://img.shields.io/badge/React%20Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Native" />
-  <img src="https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=threedotjs&logoColor=white" alt="Three.js" />
-  <img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android" />
-  <img src="https://img.shields.io/badge/JavaFX-E76F00?style=for-the-badge&logo=openjdk&logoColor=white" alt="JavaFX" />
-  <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML" />
-  <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css&logoColor=white" alt="CSS" />
-  <img src="https://img.shields.io/badge/Arduino-00878F?style=for-the-badge&logo=arduino&logoColor=white" alt="Arduino" />
+  <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React" />
+  <img src="https://img.shields.io/badge/React%20Native-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React Native" />
+  <img src="https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white" alt="Three.js" />
+  <img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white" alt="Android" />
+  <img src="https://img.shields.io/badge/JavaFX-E76F00?style=flat-square&logo=openjdk&logoColor=white" alt="JavaFX" />
+  <img src="https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML" />
+  <img src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css&logoColor=white" alt="CSS" />
+  <img src="https://img.shields.io/badge/Arduino-00878F?style=flat-square&logo=arduino&logoColor=white" alt="Arduino" />
 </p>
 <p>
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
-  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" />
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
-  <img src="https://img.shields.io/badge/AWS%20RDS%20%2B%20EC2-FF9900?style=for-the-badge" alt="AWS RDS and EC2" />
-  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" />
-  <img src="https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" alt="Google Cloud" />
-  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions" />
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white" alt="Flask" />
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" alt="MySQL" />
+  <img src="https://img.shields.io/badge/AWS%20RDS%20%2B%20EC2-FF9900?style=flat-square" alt="AWS RDS + EC2" />
+  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black" alt="Firebase" />
+  <img src="https://img.shields.io/badge/Google%20Cloud-4285F4?style=flat-square&logo=googlecloud&logoColor=white" alt="Google Cloud" />
+  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
 </p>
 
 **Interested in:** NLP · computer vision · applied ML · emotion-aware AI · AI for health
 
-<img src="assets/divider.svg" width="100%" alt="" />
-
 ## Activity
 
 <p align="center">
-  <img src="profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D contribution graph" />
+  <picture><source media="(prefers-color-scheme: dark)" srcset="profile-3d-contrib/profile-3d-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="profile-3d-contrib/profile-3d-light.svg" /><img src="profile-3d-contrib/profile-3d-light.svg" width="100%" alt="3D contribution graph" /></picture>
 </p>
 <p align="center">
-  <img src="generated/stats.svg" width="49%" alt="GitHub activity" />
-  <img src="generated/languages.svg" width="49%" alt="Top languages" />
+  <picture><source media="(prefers-color-scheme: dark)" srcset="generated/stats-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="generated/stats-light.svg" /><img src="generated/stats-light.svg" width="49%" alt="GitHub activity" /></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="generated/languages-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="generated/languages-light.svg" /><img src="generated/languages-light.svg" width="49%" alt="Top languages" /></picture>
 </p>
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="generated/snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="generated/snake.svg" />
-    <img src="generated/snake.svg" width="100%" alt="Contribution snake" />
-  </picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="generated/snake-dark.svg" /><source media="(prefers-color-scheme: light)" srcset="generated/snake-light.svg" /><img src="generated/snake-light.svg" width="100%" alt="Contribution snake" /></picture>
 </p>
 <p align="center"><sub>Rebuilt every day by a GitHub Action in this repo.</sub></p>
 
-<img src="assets/divider.svg" width="100%" alt="" />
+---
 
 <p align="center">
-  <a href="https://sohambasanwar.vercel.app"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" /></a>
-  <a href="https://www.linkedin.com/in/sohambasanwar/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="https://youtu.be/LUslo5eH1Ac"><img src="https://img.shields.io/badge/PersistAI%20demo-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="PersistAI demo" /></a>
-  <a href="https://youtu.be/-gCidfXCt_E"><img src="https://img.shields.io/badge/Python%20app%20demo-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Python app demo" /></a>
+  <a href="https://sohambasanwar.vercel.app">Portfolio</a> ·
+  <a href="https://www.linkedin.com/in/sohambasanwar/">LinkedIn</a> ·
+  <a href="https://youtu.be/LUslo5eH1Ac">PersistAI demo</a> ·
+  <a href="https://youtu.be/-gCidfXCt_E">Python app demo</a>
 </p>
 
 > I prefer building systems that are practical, polished, and technically real — not just ideas on paper.
