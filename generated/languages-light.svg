@@ -12,17 +12,17 @@ text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', 
 <text x="20" y="34" font-size="15" font-weight="600" fill="#1f2328">Languages</text>
 <line x1="20" y1="50" x2="475" y2="50" stroke="#eaeef2"/>
 <clipPath id="barclip"><rect x="20" y="66" width="455" height="8" rx="4"/></clipPath>
-<g clip-path="url(#barclip)"><rect x="20" y="66" width="455" height="8" fill="#eaeef2"/><rect class="seg" x="20.0" y="66" width="119.7" height="8" fill="#b07219" style="animation-delay:0.00s"/><rect class="seg" x="141.7" y="66" width="89.8" height="8" fill="#555555" style="animation-delay:0.10s"/><rect class="seg" x="233.4" y="66" width="74.9" height="8" fill="#3178c6" style="animation-delay:0.20s"/><rect class="seg" x="310.3" y="66" width="52.4" height="8" fill="#663399" style="animation-delay:0.30s"/><rect class="seg" x="364.7" y="66" width="38.2" height="8" fill="#3572A5" style="animation-delay:0.40s"/><rect class="seg" x="405.0" y="66" width="68.0" height="8" fill="#818b98" style="animation-delay:0.50s"/></g>
+<g clip-path="url(#barclip)"><rect x="20" y="66" width="455" height="8" fill="#eaeef2"/><rect class="seg" x="20.0" y="66" width="118.3" height="8" fill="#b07219" style="animation-delay:0.00s"/><rect class="seg" x="140.3" y="66" width="88.8" height="8" fill="#555555" style="animation-delay:0.10s"/><rect class="seg" x="231.1" y="66" width="74.0" height="8" fill="#3178c6" style="animation-delay:0.20s"/><rect class="seg" x="307.1" y="66" width="51.8" height="8" fill="#663399" style="animation-delay:0.30s"/><rect class="seg" x="360.9" y="66" width="42.9" height="8" fill="#3572A5" style="animation-delay:0.40s"/><rect class="seg" x="405.7" y="66" width="67.3" height="8" fill="#818b98" style="animation-delay:0.50s"/></g>
 <g class="in" style="animation-delay:0.30s"><circle cx="25" cy="104" r="5" fill="#b07219"/>
-<text x="38" y="108" font-size="13" font-weight="600" fill="#1f2328">Java</text><text x="235" y="108" text-anchor="end" font-size="12" fill="#59636e">26.7%</text></g>
+<text x="38" y="108" font-size="13" font-weight="600" fill="#1f2328">Java</text><text x="235" y="108" text-anchor="end" font-size="12" fill="#59636e">26.4%</text></g>
 <g class="in" style="animation-delay:0.38s"><circle cx="265" cy="104" r="5" fill="#555555"/>
-<text x="278" y="108" font-size="13" font-weight="600" fill="#1f2328">C</text><text x="475" y="108" text-anchor="end" font-size="12" fill="#59636e">20.2%</text></g>
+<text x="278" y="108" font-size="13" font-weight="600" fill="#1f2328">C</text><text x="475" y="108" text-anchor="end" font-size="12" fill="#59636e">19.9%</text></g>
 <g class="in" style="animation-delay:0.46s"><circle cx="25" cy="132" r="5" fill="#3178c6"/>
-<text x="38" y="136" font-size="13" font-weight="600" fill="#1f2328">TypeScript</text><text x="235" y="136" text-anchor="end" font-size="12" fill="#59636e">16.9%</text></g>
+<text x="38" y="136" font-size="13" font-weight="600" fill="#1f2328">TypeScript</text><text x="235" y="136" text-anchor="end" font-size="12" fill="#59636e">16.7%</text></g>
 <g class="in" style="animation-delay:0.54s"><circle cx="265" cy="132" r="5" fill="#663399"/>
-<text x="278" y="136" font-size="13" font-weight="600" fill="#1f2328">CSS</text><text x="475" y="136" text-anchor="end" font-size="12" fill="#59636e">12.0%</text></g>
+<text x="278" y="136" font-size="13" font-weight="600" fill="#1f2328">CSS</text><text x="475" y="136" text-anchor="end" font-size="12" fill="#59636e">11.8%</text></g>
 <g class="in" style="animation-delay:0.62s"><circle cx="25" cy="160" r="5" fill="#3572A5"/>
-<text x="38" y="164" font-size="13" font-weight="600" fill="#1f2328">Python</text><text x="235" y="164" text-anchor="end" font-size="12" fill="#59636e">8.8%</text></g>
+<text x="38" y="164" font-size="13" font-weight="600" fill="#1f2328">Python</text><text x="235" y="164" text-anchor="end" font-size="12" fill="#59636e">9.9%</text></g>
 <g class="in" style="animation-delay:0.70s"><circle cx="265" cy="160" r="5" fill="#818b98"/>
-<text x="278" y="164" font-size="13" font-weight="600" fill="#1f2328">Other</text><text x="475" y="164" text-anchor="end" font-size="12" fill="#59636e">15.4%</text></g>
+<text x="278" y="164" font-size="13" font-weight="600" fill="#1f2328">Other</text><text x="475" y="164" text-anchor="end" font-size="12" fill="#59636e">15.2%</text></g>
 </svg>
